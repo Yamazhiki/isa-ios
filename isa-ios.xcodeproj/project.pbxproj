@@ -17,15 +17,12 @@
 		9C10AF5B206A191F00ED63EA /* RoomUsers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C10AF5A206A191F00ED63EA /* RoomUsers.storyboard */; };
 		9C10AF5D206A1C3D00ED63EA /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10AF5C206A1C3C00ED63EA /* UIView.swift */; };
 		9C10AF5F206A22C200ED63EA /* TestLive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C10AF5E206A22C200ED63EA /* TestLive.storyboard */; };
-		9C10AF61206A2C9D00ED63EA /* RoomUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10AF60206A2C9D00ED63EA /* RoomUsersViewController.swift */; };
 		9C10AF63206A2D1D00ED63EA /* RoomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10AF62206A2D1D00ED63EA /* RoomUser.swift */; };
 		9C10AF65206A2EF100ED63EA /* RoomUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10AF64206A2EF100ED63EA /* RoomUsersViewModel.swift */; };
 		9C13BC782064E6FE00224D47 /* Home2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC772064E6FE00224D47 /* Home2ViewModel.swift */; };
-		9C13BC7A2064E71A00224D47 /* RoomChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC792064E71A00224D47 /* RoomChatViewController.swift */; };
 		9C13BC7C2064E72400224D47 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC7B2064E72400224D47 /* Item.swift */; };
 		9C13BC7E2064E73000224D47 /* RoomChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C13BC7D2064E73000224D47 /* RoomChat.storyboard */; };
 		9C13BC802064EB5F00224D47 /* RoomChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC7F2064EB5F00224D47 /* RoomChatViewModel.swift */; };
-		9C13BC822064EF9000224D47 /* HomeV2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC812064EF9000224D47 /* HomeV2ViewController.swift */; };
 		9C13BC84206502D700224D47 /* HomeV2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C13BC83206502D700224D47 /* HomeV2.storyboard */; };
 		9C13BC862067585700224D47 /* CaculateHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC852067585700224D47 /* CaculateHeight.swift */; };
 		9C13BC88206886FA00224D47 /* RoomChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC87206886FA00224D47 /* RoomChatCell.swift */; };
@@ -34,7 +31,6 @@
 		A31FD0796B33018AE5FF3379 /* ServerConfigType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDAD3BBE8C9CE31DA3759 /* ServerConfigType.swift */; };
 		A31FD0D096A86F3207E7E521 /* LoginViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDC12292250907F6A29DD /* LoginViewModelType.swift */; };
 		A31FD0FC0AA5979257075BB8 /* UserLenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDCF5410B2EB19F57FF27 /* UserLenes.swift */; };
-		A31FD0FF2FE844E85A13A54B /* LiveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA525B303B66D92733B4 /* LiveListViewController.swift */; };
 		A31FD19A7950A3D8F8CA227B /* ContinuableTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD9F1F21B85EA78C0F01A /* ContinuableTaskManager.swift */; };
 		A31FD19A7BF3BAC5CC340DB3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD8D4237CBF1B0F8AFAA2 /* BaseViewController.swift */; };
 		A31FD1A69CB44145A5E7480A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD389C46C1C8CE7B03AC3 /* Environment.swift */; };
@@ -103,10 +99,8 @@
 		ED81EDDE20525D1400A63733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED81EDDD20525D1400A63733 /* Assets.xcassets */; };
 		ED81EDE120525D1400A63733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED81EDDF20525D1400A63733 /* LaunchScreen.storyboard */; };
 		ED9AACEC206DDB5B0004FDC2 /* PrepareLive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9AACEB206DDB5B0004FDC2 /* PrepareLive.storyboard */; };
-		ED9AACEE206DDF890004FDC2 /* PrepareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9AACED206DDF890004FDC2 /* PrepareViewController.swift */; };
 		ED9AACF0206DFC0B0004FDC2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9AACEF206DFC0B0004FDC2 /* Login.storyboard */; };
 		EDAB299A206259B500BDA3AB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAB2999206259B500BDA3AB /* Home.storyboard */; };
-		EDAB299E20625F6400BDA3AB /* HomeContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB299D20625F6400BDA3AB /* HomeContainerViewController.swift */; };
 		EDAB29A0206264DD00BDA3AB /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB299F206264DD00BDA3AB /* FlowLayout.swift */; };
 		EDF884D120525D76004554B9 /* Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF884C820525D76004554B9 /* Api.framework */; };
 		EDF884DA20525D76004554B9 /* Api.h in Headers */ = {isa = PBXBuildFile; fileRef = EDF884CA20525D76004554B9 /* Api.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -192,15 +186,12 @@
 		9C10AF5A206A191F00ED63EA /* RoomUsers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoomUsers.storyboard; sourceTree = "<group>"; };
 		9C10AF5C206A1C3C00ED63EA /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		9C10AF5E206A22C200ED63EA /* TestLive.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestLive.storyboard; sourceTree = "<group>"; };
-		9C10AF60206A2C9D00ED63EA /* RoomUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomUsersViewController.swift; sourceTree = "<group>"; };
 		9C10AF62206A2D1D00ED63EA /* RoomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomUser.swift; sourceTree = "<group>"; };
 		9C10AF64206A2EF100ED63EA /* RoomUsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomUsersViewModel.swift; sourceTree = "<group>"; };
 		9C13BC772064E6FE00224D47 /* Home2ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home2ViewModel.swift; sourceTree = "<group>"; };
-		9C13BC792064E71A00224D47 /* RoomChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomChatViewController.swift; sourceTree = "<group>"; };
 		9C13BC7B2064E72400224D47 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9C13BC7D2064E73000224D47 /* RoomChat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RoomChat.storyboard; sourceTree = "<group>"; };
 		9C13BC7F2064EB5F00224D47 /* RoomChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomChatViewModel.swift; sourceTree = "<group>"; };
-		9C13BC812064EF9000224D47 /* HomeV2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeV2ViewController.swift; sourceTree = "<group>"; };
 		9C13BC83206502D700224D47 /* HomeV2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeV2.storyboard; sourceTree = "<group>"; };
 		9C13BC852067585700224D47 /* CaculateHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculateHeight.swift; sourceTree = "<group>"; };
 		9C13BC87206886FA00224D47 /* RoomChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomChatCell.swift; sourceTree = "<group>"; };
@@ -242,7 +233,6 @@
 		A31FDA312DE44FF8A07AA2E0 /* CacheType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheType.swift; sourceTree = "<group>"; };
 		A31FDA3D58E2FED9E222E9A4 /* UIViewController+Preparation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Preparation.swift"; sourceTree = "<group>"; };
 		A31FDA3D7B3F59FB0275FA6D /* ELWaterFlowLayoutLenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELWaterFlowLayoutLenes.swift; sourceTree = "<group>"; };
-		A31FDA525B303B66D92733B4 /* LiveListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveListViewController.swift; sourceTree = "<group>"; };
 		A31FDA599C6DFABC4824081B /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		A31FDAD3BBE8C9CE31DA3759 /* ServerConfigType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfigType.swift; sourceTree = "<group>"; };
 		A31FDAF9E68638B20213FE12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = App/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -273,10 +263,8 @@
 		ED81EDE720525D1400A63733 /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED81EDF220525D1400A63733 /* AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9AACEB206DDB5B0004FDC2 /* PrepareLive.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PrepareLive.storyboard; sourceTree = "<group>"; };
-		ED9AACED206DDF890004FDC2 /* PrepareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareViewController.swift; sourceTree = "<group>"; };
 		ED9AACEF206DFC0B0004FDC2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		EDAB2999206259B500BDA3AB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		EDAB299D20625F6400BDA3AB /* HomeContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContainerViewController.swift; sourceTree = "<group>"; };
 		EDAB299F206264DD00BDA3AB /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		EDF884C820525D76004554B9 /* Api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF884CA20525D76004554B9 /* Api.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Api.h; sourceTree = "<group>"; };
@@ -519,14 +507,8 @@
 		A31FDEB25DC3DD9B166C58D7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9C13BC812064EF9000224D47 /* HomeV2ViewController.swift */,
-				9C13BC792064E71A00224D47 /* RoomChatViewController.swift */,
 				A31FD7BB2FC9ED2295F53553 /* LoginViewController.swift */,
 				A31FD8D4237CBF1B0F8AFAA2 /* BaseViewController.swift */,
-				A31FDA525B303B66D92733B4 /* LiveListViewController.swift */,
-				EDAB299D20625F6400BDA3AB /* HomeContainerViewController.swift */,
-				9C10AF60206A2C9D00ED63EA /* RoomUsersViewController.swift */,
-				ED9AACED206DDF890004FDC2 /* PrepareViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -940,13 +922,10 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-App/Pods-App-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/ESTabBarController/ESTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/Kickstarter-Prelude/Prelude.framework",
 				"${BUILT_PRODUCTS_DIR}/Runes/Runes.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -955,13 +934,10 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Prelude.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Runes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -1051,7 +1027,6 @@
 				A31FD1A69CB44145A5E7480A /* Environment.swift in Sources */,
 				A31FD70F1DF2B1D030C58A01 /* AppEnvironment.swift in Sources */,
 				ED0D1EDD205B9FD800288B22 /* ServerConfigImp.swift in Sources */,
-				EDAB299E20625F6400BDA3AB /* HomeContainerViewController.swift in Sources */,
 				A31FDCA6BB29FC1D4B1C3128 /* CommonAccessToken.swift in Sources */,
 				A31FDF28AC8538BA1337303E /* LoginViewModelType.swift in Sources */,
 				A31FDDD5DE252B1473AF6555 /* LoginViewController.swift in Sources */,
@@ -1071,8 +1046,6 @@
 				9C10AF572069E2A900ED63EA /* Message.swift in Sources */,
 				A31FDB3AEEB29F68090BE480 /* UserEvents.swift in Sources */,
 				A31FD68F7B4C3A2FEF2934B8 /* UIDataStatus.swift in Sources */,
-				9C13BC7A2064E71A00224D47 /* RoomChatViewController.swift in Sources */,
-				A31FD0FF2FE844E85A13A54B /* LiveListViewController.swift in Sources */,
 				A31FD3ADC88DA967A5E0F55A /* Live.swift in Sources */,
 				A31FD7D2224F0A3B5FE28A35 /* GridViewLayoutType.swift in Sources */,
 				A31FDBC80C2DECE883CB1618 /* Notification.swift in Sources */,
@@ -1088,12 +1061,9 @@
 				A31FD458F2D10BFC42279BD2 /* RxImagePickerDelegateProxy.swift in Sources */,
 				A31FD2C38D9681560854B690 /* UIViewController+Environment.swift in Sources */,
 				A31FDFE8759E58BDD88908B9 /* UIViewController+Preparation.swift in Sources */,
-				9C10AF61206A2C9D00ED63EA /* RoomUsersViewController.swift in Sources */,
 				9C13BC862067585700224D47 /* CaculateHeight.swift in Sources */,
-				9C13BC822064EF9000224D47 /* HomeV2ViewController.swift in Sources */,
 				9C13BC782064E6FE00224D47 /* Home2ViewModel.swift in Sources */,
 				9C10AF5D206A1C3D00ED63EA /* UIView.swift in Sources */,
-				ED9AACEE206DDF890004FDC2 /* PrepareViewController.swift in Sources */,
 				9C13BC7C2064E72400224D47 /* Item.swift in Sources */,
 				9C13BC802064EB5F00224D47 /* RoomChatViewModel.swift in Sources */,
 				A31FDA5965C5E2E07D44E65D /* ContinuableTaskType.swift in Sources */,

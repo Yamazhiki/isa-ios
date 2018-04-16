@@ -1,7 +1,6 @@
 PODS:
-  - Alamofire (4.7.1)
+  - Alamofire (4.7.2)
   - Differentiator (3.0.2)
-  - ESTabBarController (0.2)
   - Kickstarter-Prelude (0.0.2):
     - Runes (~> 4.1.0)
   - Moya (11.0.2):
@@ -21,25 +20,19 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
-  - SwiftProtobuf (1.0.3)
-  - XLPagerTabStrip (8.0.1)
 
 DEPENDENCIES:
-  - ESTabBarController
   - Kickstarter-Prelude
   - Moya
   - Moya/RxSwift
   - RxCocoa
   - RxDataSources
   - RxSwift
-  - SwiftProtobuf
-  - XLPagerTabStrip
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Differentiator
-    - ESTabBarController
     - Kickstarter-Prelude
     - Moya
     - Result
@@ -47,13 +40,10 @@ SPEC REPOS:
     - RxCocoa
     - RxDataSources
     - RxSwift
-    - SwiftProtobuf
-    - XLPagerTabStrip
 
 SPEC CHECKSUMS:
-  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
-  ESTabBarController: e82ac0b135bec16fb646ac1da4ac8953fcd927da
   Kickstarter-Prelude: b4b2f7de1af0b1d209a947168f5c64604806bdcf
   Moya: a725035953bc1c0eb1be505ab903984501d82440
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
@@ -61,9 +51,7 @@ SPEC CHECKSUMS:
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: e49536837d9901277638493ea537394d4b55f570
-  SwiftProtobuf: 5ccc0e4054e37c75800e5744acb2aa80bb72b39c
-  XLPagerTabStrip: c908b17cbf42fcd2598ee1adfc49bae25444d88a
 
-PODFILE CHECKSUM: bfc013c59c0180fa5d560b0d3dcdcd057de41c4b
+PODFILE CHECKSUM: 1cfbbd28e52c1c7b065931f85827ffb48db5e24e
 
 COCOAPODS: 1.5.0

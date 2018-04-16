@@ -17,6 +17,8 @@ extension Client: ApiTargetType {
         switch self {
         case .detail(let id):
             return .requestParameters(parameters: ["id": id], encoding: URLEncoding.default)
+        case .login(let username, let password):
+            return .requestParameters(parameters: ["username": username, "password": password], encoding: URLEncoding.httpBody)
         default:
             return .requestPlain
         }

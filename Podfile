@@ -24,11 +24,7 @@ target 'App' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Kickstarter-Prelude'
-  pod 'XLPagerTabStrip'
-  pod 'SwiftProtobuf'
   pod 'RxDataSources'
-  pod 'ESTabBarController'
-  pod 'MaterialComponents'
   target 'AppTests' do
     inherit! :search_paths
     # Pods for testing

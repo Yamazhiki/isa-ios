@@ -7,11 +7,14 @@ import Foundation
 import RxSwift
 
 internal protocol LoginViewModelInputs {
+    func username(val: String)
+    func password(src: String)
     func submit()
 }
 
 internal protocol LoginViewModelOutputs {
     var loginResult: Observable<Int> { get }
+    var canLogin: Observable<Bool> { get }
 }
 
 internal protocol LoginViewModelType {
@@ -20,6 +23,10 @@ internal protocol LoginViewModelType {
 }
 
 internal struct LoginViewModel: LoginViewModelInputs, LoginViewModelOutputs, LoginViewModelType {
+    private let usernameSubject = PublishSubject<String>()
+    private let passwordSubject = PublishSubject<String>()
+    private let submitClickSubject = PublishSubject<Void>()
+
     var inputs: LoginViewModelInputs {
         return self
     }
@@ -27,15 +34,34 @@ internal struct LoginViewModel: LoginViewModelInputs, LoginViewModelOutputs, Log
         return self
     }
 
-    private let loginResultSubject = PublishSubject<Int>()
 
-    let loginResult: Observable<Int>
+    func username(val: String) {
+        usernameSubject.onNext(val)
+    }
 
-    init() {
-        loginResult = loginResultSubject.asObservable()
+    func password(src: String) {
+        passwordSubject.onNext(src)
     }
 
     func submit() {
-        loginResultSubject.onNext(1)
+        submitClickSubject.onNext(())
+    }
+
+    /*Outputs*/
+    var loginResult: Observable<Int> {
+        return submitClickSubject.asObservable().withLatestFrom(Observable.combineLatest(usernameSubject.asObservable(), passwordSubject.asObservable()) {
+            ($0, $1)
+        }).flatMapLatest { params -> Observable<User> in
+            return AppEnvironment.current.api.request(target: .login(params.0, params.1))
+        }.map {
+            $0.id
+        }
+    }
+    var canLogin: Observable<Bool> {
+        return Observable.combineLatest(usernameSubject.asObservable(), passwordSubject.asObservable()) {
+            ($0, $1)
+        }.map {
+            $0.0.count > 10 && $0.1.count > 6
+        }
     }
 }
