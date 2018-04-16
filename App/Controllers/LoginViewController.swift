@@ -16,19 +16,29 @@ class LoginViewController: RxViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        AppEnvironment.switchEnv(envTypeOrder: 0)
         view.backgroundColor = .white
         usernameOutlet.rx.text.orEmpty.asObservable()
-            .subscribe(onNext: { src in
-                self.viewModel.inputs.username(val: src)
-            })
-            .disposed(by: disposeBag)
-        
+                .subscribe(onNext: { src in
+                    self.viewModel.inputs.username(val: src)
+                })
+                .disposed(by: disposeBag)
+
         passwordOutlet.rx.text.orEmpty.asObservable()
-            .subscribe{ src in
-                self.viewModel.inputs.password(src: src.element ?? "")
-            }
-            .disposed(by: disposeBag)
+                .subscribe { src in
+                    self.viewModel.inputs.password(src: src.element ?? "")
+                }
+                .disposed(by: disposeBag)
         viewModel.outputs.canLogin.asObservable().subscribe(onNext: { self.submitOutlet.isEnabled = $0 }).disposed(by: disposeBag)
+
+        viewModel.outputs.loginResult.asObservable()
+                .subscribe { e in
+                    if e.element == 0 {
+                        print("Fail")
+                    } else {
+                        print("True")
+                    }
+                }.disposed(by: disposeBag)
 
     }
 

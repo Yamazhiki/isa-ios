@@ -62,7 +62,7 @@ internal struct LoginViewModel: LoginViewModelInputs, LoginViewModelOutputs, Log
         return Observable.combineLatest(usernameSubject.asObservable(), passwordSubject.asObservable()) {
             ($0, $1)
         }.map {
-            $0.0.count > 8 && $0.1.count > 6
+            $0.0.count >= 8 && $0.1.count >= 6
         }.asDriver(onErrorJustReturn: false)
     }
 }

@@ -26,7 +26,8 @@ extension Client: ApiTargetType {
 }
 
 private func stub(type: Client) -> Data {
-    if let url = Bundle.main.url(forResource: "\(type)", withExtension: "json"),
+    let s = "\(type)".split(separator: "(")
+    if let url = Bundle.main.url(forResource: s[0].description, withExtension: "json"),
        let data = try? Data.init(contentsOf: url) {
         return data
     }

@@ -48,6 +48,9 @@
                                     <constraint firstAttribute="height" constant="30" id="gm6-Jd-ZMt"/>
                                 </constraints>
                                 <state key="normal" title="登录"/>
+                                <connections>
+                                    <action selector="loginHandle" destination="Cst-Lk-6g0" eventType="touchUpInside" id="GYO-c8-eVc"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="6个长度" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDA-pH-5gF">
                                 <rect key="frame" x="118" y="134" width="140" height="30"/>

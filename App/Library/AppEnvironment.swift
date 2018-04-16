@@ -38,6 +38,10 @@ struct AppEnvironment {
         generateApiAndReplace(accessToken: accessToken)
     }
 
+    
+    /// 切换环境
+    ///
+    /// - Parameter envTypeOrder: 0模拟环境 1调试环境 2线上
     static func switchEnv(envTypeOrder: Int) {
         type = EnvironmentType.from(envTypeOrder)
         generateApiAndReplace()
