@@ -84,6 +84,26 @@
 		ED0D1EE1205BA02E00288B22 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD83CF647CA2FA37DC31C /* User.swift */; };
 		ED0D1EE2205BA02F00288B22 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD83CF647CA2FA37DC31C /* User.swift */; };
 		ED592D0420847103004C04F4 /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = ED592D0320847103004C04F4 /* login.json */; };
+		ED592D0620849769004C04F4 /* AppEnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED592D0520849769004C04F4 /* AppEnvironmentTests.swift */; };
+		ED592D072084976F004C04F4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD389C46C1C8CE7B03AC3 /* Environment.swift */; };
+		ED592D082084976F004C04F4 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD06CCB40155F7792BF7E /* AppEnvironment.swift */; };
+		ED592D0920849881004C04F4 /* Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF884C820525D76004554B9 /* Api.framework */; };
+		ED592D0A208498A9004C04F4 /* UserEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD4DC309AA94142B53119 /* UserEvents.swift */; };
+		ED592D0B208498BB004C04F4 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD851B4EEAD10D66031E6 /* Reachability.swift */; };
+		ED592D0C208498BB004C04F4 /* GeolocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD27E8D7B59B315351630 /* GeolocationService.swift */; };
+		ED592D0D208498BB004C04F4 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD838AF139F36F0FC3F71 /* ReachabilityService.swift */; };
+		ED592D0E208498FF004C04F4 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDFD616F4832146ECCE2E /* Client.swift */; };
+		ED592D0F20849901004C04F4 /* ClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD1D6CB5CE0FC6A1BC461 /* ClientMock.swift */; };
+		ED592D102084990E004C04F4 /* UIViewController+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDFDEF943CCDD4EDE0497 /* UIViewController+Environment.swift */; };
+		ED592D112084991D004C04F4 /* RouterDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2ED261218B7EDD8AB9A /* RouterDefine.swift */; };
+		ED592D122084993C004C04F4 /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD24C9798BFBF4C753617 /* RouterType.swift */; };
+		ED592D1320849948004C04F4 /* Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD314D074B683DFDA1473 /* Intent.swift */; };
+		ED592D1420849981004C04F4 /* CommonAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD64FFAB246077A416416 /* CommonAccessToken.swift */; };
+		ED592D15208499EE004C04F4 /* OauthAccessTokenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD133E4B81B1DBB89E3C7 /* OauthAccessTokenType.swift */; };
+		ED592D19208499F5004C04F4 /* BearerAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD0292DE88A79ED90F74F /* BearerAccessToken.swift */; };
+		ED592D1A208499F5004C04F4 /* CommonAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2C6EE6E53641CCE1B73 /* CommonAccessToken.swift */; };
+		ED592D1B208499F5004C04F4 /* JWTTokenAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD966571D73C0A9E1E8C7 /* JWTTokenAccess.swift */; };
+		ED592D1C208499F8004C04F4 /* AccessTokenCheckerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD79F3E33F03529FBA017 /* AccessTokenCheckerPlugin.swift */; };
 		ED81EDD720525D1400A63733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81EDD620525D1400A63733 /* AppDelegate.swift */; };
 		ED81EDDE20525D1400A63733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED81EDDD20525D1400A63733 /* Assets.xcassets */; };
 		ED81EDE120525D1400A63733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED81EDDF20525D1400A63733 /* LaunchScreen.storyboard */; };
@@ -237,6 +257,7 @@
 		EBF70600B2C0A8BD7072399F /* Pods-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppTests/Pods-AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED14F4DB6B3488F813293188 /* Pods-ApiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApiTests/Pods-ApiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED592D0320847103004C04F4 /* login.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
+		ED592D0520849769004C04F4 /* AppEnvironmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironmentTests.swift; sourceTree = "<group>"; };
 		ED81EDD320525D1400A63733 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED81EDD620525D1400A63733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED81EDDD20525D1400A63733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -286,6 +307,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED592D0920849881004C04F4 /* Api.framework in Frameworks */,
 				36FD4BE9A5393B7D94188CC0 /* Pods_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,16 +432,17 @@
 			children = (
 				A31FDFABFB0ACC6230BD1810 /* Extensions */,
 				A31FDCD498E7176F7A948E85 /* Lens */,
+				A31FD4629B82757FF985CD51 /* ClientApi */,
+				A31FD745BFAD356773E86D79 /* Data */,
 				A31FD389C46C1C8CE7B03AC3 /* Environment.swift */,
+				ED592D0520849769004C04F4 /* AppEnvironmentTests.swift */,
 				A31FD06CCB40155F7792BF7E /* AppEnvironment.swift */,
 				A31FDA312DE44FF8A07AA2E0 /* CacheType.swift */,
 				A31FD2ED261218B7EDD8AB9A /* RouterDefine.swift */,
-				A31FD4629B82757FF985CD51 /* ClientApi */,
 				A31FD4DC309AA94142B53119 /* UserEvents.swift */,
 				A31FD191DF4892E583C42DBC /* UIDataStatus.swift */,
 				A31FD7CF1DBAC4256F4989FF /* GridViewLayoutType.swift */,
 				A31FDA599C6DFABC4824081B /* Notification.swift */,
-				A31FD745BFAD356773E86D79 /* Data */,
 				A31FD77CF42A68393D4E185A /* UIContinuableTaskType.swift */,
 				A31FDD6E92BE84677C17DAAF /* UIContinuableIdentityType.swift */,
 				1A91FF7BAF22058381353F20 /* BaseSection.swift */,
@@ -649,6 +672,7 @@
 				ED81EDE320525D1400A63733 /* Sources */,
 				ED81EDE420525D1400A63733 /* Frameworks */,
 				ED81EDE520525D1400A63733 /* Resources */,
+				992A4DEC5713670E2EAC0549 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -941,6 +965,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		992A4DEC5713670E2EAC0549 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AppTests/Pods-AppTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppTests/Pods-AppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A3518DF0E54E99CE7E54C9AA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1049,18 +1097,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED592D1420849981004C04F4 /* CommonAccessToken.swift in Sources */,
+				ED592D0C208498BB004C04F4 /* GeolocationService.swift in Sources */,
 				A31FDF211AE79DCE9C06B784 /* Moya.swift in Sources */,
 				ED0D1EDF205B9FDC00288B22 /* ServerConfigImpTest.swift in Sources */,
 				ED0D1EE2205BA02F00288B22 /* User.swift in Sources */,
+				ED592D072084976F004C04F4 /* Environment.swift in Sources */,
+				ED592D0F20849901004C04F4 /* ClientMock.swift in Sources */,
+				ED592D1320849948004C04F4 /* Intent.swift in Sources */,
+				ED592D102084990E004C04F4 /* UIViewController+Environment.swift in Sources */,
 				ED0D1EE0205B9FDF00288B22 /* ServerConfigImp.swift in Sources */,
+				ED592D082084976F004C04F4 /* AppEnvironment.swift in Sources */,
+				ED592D0B208498BB004C04F4 /* Reachability.swift in Sources */,
 				A31FD19A7BF3BAC5CC340DB3 /* BaseViewController.swift in Sources */,
 				A31FDE5B034F2BAC4D15BA7A /* CLLocationManager+Rx.swift in Sources */,
+				ED592D0620849769004C04F4 /* AppEnvironmentTests.swift in Sources */,
 				A31FD001CEEB8E0C96AB3E9C /* CacheType.swift in Sources */,
+				ED592D122084993C004C04F4 /* RouterType.swift in Sources */,
+				ED592D0D208498BB004C04F4 /* ReachabilityService.swift in Sources */,
 				A31FDFA2D74B636EBFE148FD /* OauthAccessToken.swift in Sources */,
 				A31FD5208C087A51C42CF623 /* UserLenes.swift in Sources */,
 				A31FDF98D619DE209D8B5B22 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
+				ED592D112084991D004C04F4 /* RouterDefine.swift in Sources */,
 				A31FDB210C33B5FDD81245E6 /* UIImagePickerController+Rx.swift in Sources */,
 				A31FD04C1780D0C0010524DF /* RxImagePickerDelegateProxy.swift in Sources */,
+				ED592D0E208498FF004C04F4 /* Client.swift in Sources */,
+				ED592D0A208498A9004C04F4 /* UserEvents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1090,7 +1152,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A31FDD3BCDE88DD0C9D88974 /* ApiProvider.swift in Sources */,
+				ED592D15208499EE004C04F4 /* OauthAccessTokenType.swift in Sources */,
+				ED592D1A208499F5004C04F4 /* CommonAccessToken.swift in Sources */,
+				ED592D19208499F5004C04F4 /* BearerAccessToken.swift in Sources */,
 				A31FDB8339F969C473BFE220 /* ServerConfigType.swift in Sources */,
+				ED592D1B208499F5004C04F4 /* JWTTokenAccess.swift in Sources */,
+				ED592D1C208499F8004C04F4 /* AccessTokenCheckerPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1302,17 +1369,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor/IM",
-				);
-				INFOPLIST_FILE = "ENT-LIVETests/Info.plist";
+				DEVELOPMENT_TEAM = 448Y9WRF55;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yamazhiki.ENT-LIVETests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ENT-LIVE.app/ENT-LIVE";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
 			};
 			name = Debug;
 		};
@@ -1323,17 +1388,15 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor/IM",
-				);
-				INFOPLIST_FILE = "ENT-LIVETests/Info.plist";
+				DEVELOPMENT_TEAM = 448Y9WRF55;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yamazhiki.ENT-LIVETests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ENT-LIVE.app/ENT-LIVE";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
 			};
 			name = Release;
 		};
@@ -1424,6 +1487,7 @@
 			baseConfigurationReference = ED14F4DB6B3488F813293188 /* Pods-ApiTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 448Y9WRF55;
 				INFOPLIST_FILE = ApiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yamazhiki.ApiTests;
@@ -1439,6 +1503,7 @@
 			baseConfigurationReference = 223FAFA4B02820CD00237B99 /* Pods-ApiTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 448Y9WRF55;
 				INFOPLIST_FILE = ApiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yamazhiki.ApiTests;

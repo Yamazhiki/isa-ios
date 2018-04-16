@@ -26,6 +26,8 @@ target 'App' do
   pod 'Kickstarter-Prelude'
   pod 'RxDataSources'
   target 'AppTests' do
+    pod 'Moya'
+    pod 'Moya/RxSwift'
     inherit! :search_paths
     # Pods for testing
   end
