@@ -28,6 +28,7 @@ target 'App' do
   target 'AppTests' do
     pod 'Moya'
     pod 'Moya/RxSwift'
+    pod 'RxTest'
     inherit! :search_paths
     # Pods for testing
   end

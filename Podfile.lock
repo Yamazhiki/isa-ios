@@ -20,6 +20,8 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
+  - RxTest (4.1.2):
+    - RxSwift (~> 4.0)
 
 DEPENDENCIES:
   - Kickstarter-Prelude
@@ -28,6 +30,7 @@ DEPENDENCIES:
   - RxCocoa
   - RxDataSources
   - RxSwift
+  - RxTest
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -40,6 +43,7 @@ SPEC REPOS:
     - RxCocoa
     - RxDataSources
     - RxSwift
+    - RxTest
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
@@ -51,7 +55,8 @@ SPEC CHECKSUMS:
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: e49536837d9901277638493ea537394d4b55f570
+  RxTest: e634f15fd2c2cd0e0120132ef7a4f7be69ad0393
 
-PODFILE CHECKSUM: 2f7f57b2fc438e9ee4e28fee1ca2bad6ef9baa4d
+PODFILE CHECKSUM: d5d1335917aa3fddb404a34df6bc0d38e073ef4d
 
 COCOAPODS: 1.5.0
