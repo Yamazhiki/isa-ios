@@ -15,7 +15,7 @@ class LoginViewModelTests: XCTestCase {
     let booleans = ["t" : true, "f" : false]
     
     let stringValues = [
-        "u1" : "Yamazhiki",
+        "Y" : "Yamazhiki",
         "u2" : "secretuser",
         "u3" : "secretusername",
         "p1" : "huge secret",
@@ -40,17 +40,17 @@ class LoginViewModelTests: XCTestCase {
             password,
             signUp
         ) = (
-            scheduler.parseEventsAndTimes(timeline: "-------u1--------------", values: stringValues).first!,
+            scheduler.parseEventsAndTimes(timeline: "-------Y---------------", values: stringValues).first!,
             scheduler.parseEventsAndTimes(timeline: "---p2------------------", values: stringValues).first!,
-            scheduler.parseEventsAndTimes(timeline: "f--------t-------------", values: booleans).first!
+            scheduler.parseEventsAndTimes(timeline: "-------t---------------", values: booleans).first!
         )
         
         let viewModel = LoginViewModel()
         _ = scheduler.createHotObservable(username).asObservable().subscribe{ viewModel.inputs.username(val: $0.element ?? "") }
         _ = scheduler.createHotObservable(password).asObservable().subscribe{ viewModel.inputs.password(src: $0.element ?? "") }
+        let signUpEnable = scheduler.record(source: viewModel.outputs.canLogin.asObservable())
         scheduler.start()
         
-        let signUpEnable = scheduler.record(source: viewModel.outputs.canLogin.asObservable())
         XCTAssertEqual(signUpEnable.events, signUp)
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
