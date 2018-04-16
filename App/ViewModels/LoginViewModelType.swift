@@ -5,6 +5,7 @@
 
 import Foundation
 import RxSwift
+import RxCocoa
 
 internal protocol LoginViewModelInputs {
     func username(val: String)
@@ -14,7 +15,7 @@ internal protocol LoginViewModelInputs {
 
 internal protocol LoginViewModelOutputs {
     var loginResult: Observable<Int> { get }
-    var canLogin: Observable<Bool> { get }
+    var canLogin: Driver<Bool> { get }
 }
 
 internal protocol LoginViewModelType {
@@ -57,11 +58,11 @@ internal struct LoginViewModel: LoginViewModelInputs, LoginViewModelOutputs, Log
             $0.id
         }
     }
-    var canLogin: Observable<Bool> {
+    var canLogin: Driver<Bool> {
         return Observable.combineLatest(usernameSubject.asObservable(), passwordSubject.asObservable()) {
             ($0, $1)
         }.map {
-            $0.0.count > 10 && $0.1.count > 6
-        }
+            $0.0.count > 8 && $0.1.count > 6
+        }.asDriver(onErrorJustReturn: false)
     }
 }

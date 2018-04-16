@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cst-Lk-6g0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cst-Lk-6g0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="6Rk-GJ-gNN">
             <objects>
-                <viewController id="Cst-Lk-6g0" customClass="LoginViewController" customModule="ENTLIVE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Cst-Lk-6g0" customClass="LoginViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tww-jW-4Cb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,10 +33,47 @@
                                     <action selector="login" destination="Cst-Lk-6g0" eventType="touchUpInside" id="cZx-iR-Ohh"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="8个长度" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kFn-Bl-Xhq">
+                                <rect key="frame" x="118" y="90" width="140" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="r4d-q5-UYX"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bg-5E-iaa">
+                                <rect key="frame" x="118" y="184" width="140" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gm6-Jd-ZMt"/>
+                                </constraints>
+                                <state key="normal" title="登录"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="6个长度" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDA-pH-5gF">
+                                <rect key="frame" x="118" y="134" width="140" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Bg-5E-iaa" firstAttribute="leading" secondItem="iDA-pH-5gF" secondAttribute="leading" id="BuY-f8-FNk"/>
+                            <constraint firstItem="kFn-Bl-Xhq" firstAttribute="centerX" secondItem="y4H-LD-TJE" secondAttribute="centerX" id="C9p-ED-dMi"/>
+                            <constraint firstItem="iDA-pH-5gF" firstAttribute="top" secondItem="kFn-Bl-Xhq" secondAttribute="bottom" constant="14" id="H2A-rN-v1x"/>
+                            <constraint firstItem="iDA-pH-5gF" firstAttribute="leading" secondItem="kFn-Bl-Xhq" secondAttribute="leading" id="Mzy-5e-t1H"/>
+                            <constraint firstItem="y4H-LD-TJE" firstAttribute="top" secondItem="kFn-Bl-Xhq" secondAttribute="bottom" constant="-100" id="cFf-2T-tUB"/>
+                            <constraint firstItem="iDA-pH-5gF" firstAttribute="trailing" secondItem="kFn-Bl-Xhq" secondAttribute="trailing" id="fvR-t1-RGI"/>
+                            <constraint firstItem="7Bg-5E-iaa" firstAttribute="trailing" secondItem="iDA-pH-5gF" secondAttribute="trailing" id="hdK-CY-4C0"/>
+                            <constraint firstItem="7Bg-5E-iaa" firstAttribute="top" secondItem="iDA-pH-5gF" secondAttribute="bottom" constant="20" id="ucC-7b-MkC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="y4H-LD-TJE"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordOutlet" destination="iDA-pH-5gF" id="n9t-lR-6Cc"/>
+                        <outlet property="submitOutlet" destination="7Bg-5E-iaa" id="sbB-0a-g6A"/>
+                        <outlet property="usernameOutlet" destination="kFn-Bl-Xhq" id="Izt-f6-d1t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOJ-ly-ciz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
