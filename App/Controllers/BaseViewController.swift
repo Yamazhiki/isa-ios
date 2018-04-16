@@ -23,6 +23,7 @@ class RxViewController: BaseViewController {
     let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
+        super.viewDidLoad()
 #if TRACE_RESOURCES
         print("Number of start resources = \(Resources.total)")
 #endif
