@@ -20,9 +20,6 @@ struct Environment {
     /// 网络反馈
     let reachability: ReachabilityService
 
-    /// 地理位置坐标
-    let geo: GeolocationService = GeolocationService.instance
-
     /// 内容缓存
     let cache: MemoryCache
 

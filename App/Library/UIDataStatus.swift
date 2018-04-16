@@ -6,6 +6,6 @@
 import Foundation
 
 enum UIDataStatus<T> {
-    case error(code: Int, msg: String, description: String)
-    case result(data: T)
+    case error(Int, String, String)
+    case result(T)
 }
