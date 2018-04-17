@@ -1,6 +1,6 @@
 //
 // Created by Yamazhiki on 16/03/2018.
-// Copyright (c) 2018 ENT-LIVE. All rights reserved.
+// Copyright (c) 2018 ISA. All rights reserved.
 //
 
 import Foundation
