@@ -8,14 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		0F8421036424F831320341D3 /* Pods_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9FAC4007BBE08FEEFD340F /* Pods_AppUITests.framework */; };
+		1A91F065320473435FD4D65F /* GeolocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F92BC774F92C0973359F /* GeolocationService.swift */; };
+		1A91F12E11E2BA4668F697EF /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F96EA20E1B57AF5FF4C0 /* RxImagePickerDelegateProxy.swift */; };
+		1A91F185662A4EFF4568FAF8 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91FBB007A5ACEABCC4AE08 /* Reachability.swift */; };
+		1A91F382CA8FE47773F2F19F /* WorkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91FCF384CFB966D41E5A99 /* WorkType.swift */; };
 		1A91F3DA219F2D91AC52FF50 /* FunctionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F6FDB147203324BBBE6F /* FunctionProtocol.swift */; };
+		1A91F451A49513763BACCF88 /* GeolocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F92BC774F92C0973359F /* GeolocationService.swift */; };
+		1A91F6CF5CC7C3F12F5EF793 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91FBB007A5ACEABCC4AE08 /* Reachability.swift */; };
+		1A91F714139E40389E8C336E /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F96EA20E1B57AF5FF4C0 /* RxImagePickerDelegateProxy.swift */; };
+		1A91F846EC29BCF47E96CCD4 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F3A21489DC8FDC4182C1 /* ReachabilityService.swift */; };
+		1A91F8BFD50EA2BE9DBC9A11 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F3A21489DC8FDC4182C1 /* ReachabilityService.swift */; };
 		1A91F9141855AC1F3136064A /* UIViewFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F79BB8605B896E351E9A /* UIViewFunc.swift */; };
+		1A91FA8D90FB0FB02C692560 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F636CBFFF389B295E2EA /* UIImagePickerController+Rx.swift */; };
 		1A91FAD6889D42A7B1E8731D /* BaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91FF7BAF22058381353F20 /* BaseSection.swift */; };
+		1A91FBA8111C612FEE7871D6 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F636CBFFF389B295E2EA /* UIImagePickerController+Rx.swift */; };
+		1A91FDE30FD5DDCC53D0FCB9 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91FCCDE5A2AEE4A2B47207 /* RxCLLocationManagerDelegateProxy.swift */; };
+		1A91FECAF21C2EDA4A6B9120 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91FCCDE5A2AEE4A2B47207 /* RxCLLocationManagerDelegateProxy.swift */; };
 		36FD4BE9A5393B7D94188CC0 /* Pods_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F053DF75DAC8EC2829420BCA /* Pods_AppTests.framework */; };
 		9C10AF5D206A1C3D00ED63EA /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C10AF5C206A1C3C00ED63EA /* UIView.swift */; };
 		9C13BC862067585700224D47 /* CaculateHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BC852067585700224D47 /* CaculateHeight.swift */; };
 		A31FD001CEEB8E0C96AB3E9C /* CacheType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA312DE44FF8A07AA2E0 /* CacheType.swift */; };
-		A31FD04C1780D0C0010524DF /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD5514C38DA0E5BC546AC /* RxImagePickerDelegateProxy.swift */; };
 		A31FD0796B33018AE5FF3379 /* ServerConfigType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDAD3BBE8C9CE31DA3759 /* ServerConfigType.swift */; };
 		A31FD0FC0AA5979257075BB8 /* UserLenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDCF5410B2EB19F57FF27 /* UserLenes.swift */; };
 		A31FD1A69CB44145A5E7480A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD389C46C1C8CE7B03AC3 /* Environment.swift */; };
@@ -23,13 +35,10 @@
 		A31FD2C38D9681560854B690 /* UIViewController+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDFDEF943CCDD4EDE0497 /* UIViewController+Environment.swift */; };
 		A31FD3534D3F813C738E860F /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = A31FDB4DD1F0520C4085B224 /* users.json */; };
 		A31FD3D89C9C3314E3990575 /* OauthAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2429A5A3D4E8A683B3E /* OauthAccessToken.swift */; };
-		A31FD458F2D10BFC42279BD2 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD5514C38DA0E5BC546AC /* RxImagePickerDelegateProxy.swift */; };
 		A31FD47143B3E9E49546445C /* OauthAccessTokenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD133E4B81B1DBB89E3C7 /* OauthAccessTokenType.swift */; };
 		A31FD4D38C545F49C45FFDE7 /* BearerAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD0292DE88A79ED90F74F /* BearerAccessToken.swift */; };
 		A31FD5208C087A51C42CF623 /* UserLenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDCF5410B2EB19F57FF27 /* UserLenes.swift */; };
 		A31FD611D463C4384559454C /* ClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD1D6CB5CE0FC6A1BC461 /* ClientMock.swift */; };
-		A31FD64F85D64BD3E7F06F1B /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD838AF139F36F0FC3F71 /* ReachabilityService.swift */; };
-		A31FD65B9FC8F254F2C79788 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD562DB396DD1B00A4C3D /* RxCLLocationManagerDelegateProxy.swift */; };
 		A31FD65BF289485071367AF4 /* UIIntentReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDD3F812105AA225034F2 /* UIIntentReason.swift */; };
 		A31FD68F7B4C3A2FEF2934B8 /* UIDataStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD191DF4892E583C42DBC /* UIDataStatus.swift */; };
 		A31FD70F1DF2B1D030C58A01 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD06CCB40155F7792BF7E /* AppEnvironment.swift */; };
@@ -41,17 +50,14 @@
 		A31FDA68687648073C092AA9 /* Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD87DDA281E0771586595 /* Moya.swift */; };
 		A31FDAA4EDBA9F23EC9A052C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD8D4237CBF1B0F8AFAA2 /* BaseViewController.swift */; };
 		A31FDB0B80C12441C0F58B44 /* RouterDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2ED261218B7EDD8AB9A /* RouterDefine.swift */; };
-		A31FDB210C33B5FDD81245E6 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD669A6DE96DC765F4C7C /* UIImagePickerController+Rx.swift */; };
 		A31FDB3AEEB29F68090BE480 /* UserEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD4DC309AA94142B53119 /* UserEvents.swift */; };
 		A31FDB57E2BF02BE68D8AE07 /* Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD314D074B683DFDA1473 /* Intent.swift */; };
 		A31FDB8339F969C473BFE220 /* ServerConfigType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDAD3BBE8C9CE31DA3759 /* ServerConfigType.swift */; };
 		A31FDBC80C2DECE883CB1618 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA599C6DFABC4824081B /* Notification.swift */; };
-		A31FDBD87085FE237DC9B915 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD851B4EEAD10D66031E6 /* Reachability.swift */; };
 		A31FDCA6BB29FC1D4B1C3128 /* CommonAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD64FFAB246077A416416 /* CommonAccessToken.swift */; };
 		A31FDCBCD30C1AEF0395338B /* CacheType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA312DE44FF8A07AA2E0 /* CacheType.swift */; };
 		A31FDCEA40ADF922717274E4 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD8FD87BF942A0D29E19F /* ApiProvider.swift */; };
 		A31FDCF25D076E0F28988631 /* UIContinuableTaskType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD77CF42A68393D4E185A /* UIContinuableTaskType.swift */; };
-		A31FDD03B01EEFBA75B725D5 /* GeolocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD27E8D7B59B315351630 /* GeolocationService.swift */; };
 		A31FDD2EDCA378EEAD48B0B3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = A31FD36879E89F560C930E85 /* README */; };
 		A31FDD3BCDE88DD0C9D88974 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD8FD87BF942A0D29E19F /* ApiProvider.swift */; };
 		A31FDD540617E61F33D73DE0 /* AccessTokenCheckerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD79F3E33F03529FBA017 /* AccessTokenCheckerPlugin.swift */; };
@@ -62,8 +68,6 @@
 		A31FDE5F0449133FFDF612B6 /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDF53E5EDEF784C7F0E03 /* CLLocationManager+Rx.swift */; };
 		A31FDF211AE79DCE9C06B784 /* Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD87DDA281E0771586595 /* Moya.swift */; };
 		A31FDF28AC8538BA1337303E /* LoginViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDC12292250907F6A29DD /* LoginViewModelType.swift */; };
-		A31FDF7037FD6994A0BD49D8 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD669A6DE96DC765F4C7C /* UIImagePickerController+Rx.swift */; };
-		A31FDF98D619DE209D8B5B22 /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD562DB396DD1B00A4C3D /* RxCLLocationManagerDelegateProxy.swift */; };
 		A31FDFA2D74B636EBFE148FD /* OauthAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD2429A5A3D4E8A683B3E /* OauthAccessToken.swift */; };
 		A31FDFE8759E58BDD88908B9 /* UIViewController+Preparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDA3D58E2FED9E222E9A4 /* UIViewController+Preparation.swift */; };
 		A71E74885A5D62D3214AA566 /* Pods_Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF0D218FB2E2130CCC67735 /* Pods_Api.framework */; };
@@ -78,9 +82,6 @@
 		ED592D082084976F004C04F4 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD06CCB40155F7792BF7E /* AppEnvironment.swift */; };
 		ED592D0920849881004C04F4 /* Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF884C820525D76004554B9 /* Api.framework */; };
 		ED592D0A208498A9004C04F4 /* UserEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD4DC309AA94142B53119 /* UserEvents.swift */; };
-		ED592D0B208498BB004C04F4 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD851B4EEAD10D66031E6 /* Reachability.swift */; };
-		ED592D0C208498BB004C04F4 /* GeolocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD27E8D7B59B315351630 /* GeolocationService.swift */; };
-		ED592D0D208498BB004C04F4 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD838AF139F36F0FC3F71 /* ReachabilityService.swift */; };
 		ED592D0E208498FF004C04F4 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDFD616F4832146ECCE2E /* Client.swift */; };
 		ED592D0F20849901004C04F4 /* ClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FD1D6CB5CE0FC6A1BC461 /* ClientMock.swift */; };
 		ED592D102084990E004C04F4 /* UIViewController+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31FDFDEF943CCDD4EDE0497 /* UIViewController+Environment.swift */; };
@@ -175,8 +176,15 @@
 
 /* Begin PBXFileReference section */
 		0E9FAC4007BBE08FEEFD340F /* Pods_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A91F3A21489DC8FDC4182C1 /* ReachabilityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
+		1A91F636CBFFF389B295E2EA /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
 		1A91F6FDB147203324BBBE6F /* FunctionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionProtocol.swift; sourceTree = "<group>"; };
 		1A91F79BB8605B896E351E9A /* UIViewFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewFunc.swift; sourceTree = "<group>"; };
+		1A91F92BC774F92C0973359F /* GeolocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeolocationService.swift; sourceTree = "<group>"; };
+		1A91F96EA20E1B57AF5FF4C0 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
+		1A91FBB007A5ACEABCC4AE08 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		1A91FCCDE5A2AEE4A2B47207 /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
+		1A91FCF384CFB966D41E5A99 /* WorkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkType.swift; sourceTree = "<group>"; };
 		1A91FF7BAF22058381353F20 /* BaseSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSection.swift; sourceTree = "<group>"; };
 		223FAFA4B02820CD00237B99 /* Pods-ApiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApiTests/Pods-ApiTests.release.xcconfig"; sourceTree = "<group>"; };
 		59C7A991CD171BA94E83E020 /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -195,25 +203,19 @@
 		A31FD1D6CB5CE0FC6A1BC461 /* ClientMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientMock.swift; sourceTree = "<group>"; };
 		A31FD2429A5A3D4E8A683B3E /* OauthAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OauthAccessToken.swift; sourceTree = "<group>"; };
 		A31FD24C9798BFBF4C753617 /* RouterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
-		A31FD27E8D7B59B315351630 /* GeolocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeolocationService.swift; sourceTree = "<group>"; };
 		A31FD2C6EE6E53641CCE1B73 /* CommonAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAccessToken.swift; sourceTree = "<group>"; };
 		A31FD2ED261218B7EDD8AB9A /* RouterDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterDefine.swift; sourceTree = "<group>"; };
 		A31FD314D074B683DFDA1473 /* Intent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intent.swift; sourceTree = "<group>"; };
 		A31FD36879E89F560C930E85 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		A31FD389C46C1C8CE7B03AC3 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		A31FD4DC309AA94142B53119 /* UserEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEvents.swift; sourceTree = "<group>"; };
-		A31FD5514C38DA0E5BC546AC /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
-		A31FD562DB396DD1B00A4C3D /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
 		A31FD64FFAB246077A416416 /* CommonAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAccessToken.swift; sourceTree = "<group>"; };
-		A31FD669A6DE96DC765F4C7C /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
 		A31FD6D04C426E74B0BC0B57 /* ServerConfigImpTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfigImpTest.swift; sourceTree = "<group>"; };
 		A31FD77CF42A68393D4E185A /* UIContinuableTaskType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIContinuableTaskType.swift; sourceTree = "<group>"; };
 		A31FD79F3E33F03529FBA017 /* AccessTokenCheckerPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenCheckerPlugin.swift; sourceTree = "<group>"; };
 		A31FD7BB2FC9ED2295F53553 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A31FD7CF1DBAC4256F4989FF /* GridViewLayoutType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewLayoutType.swift; sourceTree = "<group>"; };
-		A31FD838AF139F36F0FC3F71 /* ReachabilityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
 		A31FD83CF647CA2FA37DC31C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		A31FD851B4EEAD10D66031E6 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A31FD87DDA281E0771586595 /* Moya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moya.swift; sourceTree = "<group>"; };
 		A31FD8D4237CBF1B0F8AFAA2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A31FD8FD87BF942A0D29E19F /* ApiProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
@@ -327,6 +329,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A91F47D8F06A11EBFFF947E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1A91F636CBFFF389B295E2EA /* UIImagePickerController+Rx.swift */,
+				1A91F96EA20E1B57AF5FF4C0 /* RxImagePickerDelegateProxy.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		1A91F54D39E8A291FF42D83E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1A91FBB007A5ACEABCC4AE08 /* Reachability.swift */,
+				1A91F92BC774F92C0973359F /* GeolocationService.swift */,
+				1A91F3A21489DC8FDC4182C1 /* ReachabilityService.swift */,
+				1A91FCCDE5A2AEE4A2B47207 /* RxCLLocationManagerDelegateProxy.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		1A91FDA35EFF8B9E0F4B7194 /* Function */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,14 +486,11 @@
 			isa = PBXGroup;
 			children = (
 				A31FD3917B67781E1F0E7A92 /* Router */,
-				A31FD851B4EEAD10D66031E6 /* Reachability.swift */,
-				A31FD27E8D7B59B315351630 /* GeolocationService.swift */,
-				A31FD838AF139F36F0FC3F71 /* ReachabilityService.swift */,
-				A31FD562DB396DD1B00A4C3D /* RxCLLocationManagerDelegateProxy.swift */,
-				A31FD669A6DE96DC765F4C7C /* UIImagePickerController+Rx.swift */,
-				A31FD5514C38DA0E5BC546AC /* RxImagePickerDelegateProxy.swift */,
 				A31FDC02DB8FC9D5DC331039 /* ContinuableTaskType.swift */,
 				1A91FDA35EFF8B9E0F4B7194 /* Function */,
+				1A91F54D39E8A291FF42D83E /* Service */,
+				1A91F47D8F06A11EBFFF947E /* UIKit */,
+				1A91FCF384CFB966D41E5A99 /* WorkType.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -1045,15 +1064,9 @@
 				A31FD68F7B4C3A2FEF2934B8 /* UIDataStatus.swift in Sources */,
 				A31FD7D2224F0A3B5FE28A35 /* GridViewLayoutType.swift in Sources */,
 				A31FDBC80C2DECE883CB1618 /* Notification.swift in Sources */,
-				A31FDBD87085FE237DC9B915 /* Reachability.swift in Sources */,
-				A31FDD03B01EEFBA75B725D5 /* GeolocationService.swift in Sources */,
-				A31FD64F85D64BD3E7F06F1B /* ReachabilityService.swift in Sources */,
 				A31FD0FC0AA5979257075BB8 /* UserLenes.swift in Sources */,
 				A31FD9CB150197A1C5EB689F /* ELWaterFlowLayoutLenes.swift in Sources */,
 				A31FD8E0F9DA65C0AAA5124C /* ApplicationViewModelType.swift in Sources */,
-				A31FD65B9FC8F254F2C79788 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
-				A31FDF7037FD6994A0BD49D8 /* UIImagePickerController+Rx.swift in Sources */,
-				A31FD458F2D10BFC42279BD2 /* RxImagePickerDelegateProxy.swift in Sources */,
 				A31FD2C38D9681560854B690 /* UIViewController+Environment.swift in Sources */,
 				A31FDFE8759E58BDD88908B9 /* UIViewController+Preparation.swift in Sources */,
 				9C13BC862067585700224D47 /* CaculateHeight.swift in Sources */,
@@ -1064,6 +1077,13 @@
 				1A91F3DA219F2D91AC52FF50 /* FunctionProtocol.swift in Sources */,
 				1A91F9141855AC1F3136064A /* UIViewFunc.swift in Sources */,
 				1A91FAD6889D42A7B1E8731D /* BaseSection.swift in Sources */,
+				1A91F185662A4EFF4568FAF8 /* Reachability.swift in Sources */,
+				1A91F065320473435FD4D65F /* GeolocationService.swift in Sources */,
+				1A91F8BFD50EA2BE9DBC9A11 /* ReachabilityService.swift in Sources */,
+				1A91FBA8111C612FEE7871D6 /* UIImagePickerController+Rx.swift in Sources */,
+				1A91F714139E40389E8C336E /* RxImagePickerDelegateProxy.swift in Sources */,
+				1A91FECAF21C2EDA4A6B9120 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
+				1A91F382CA8FE47773F2F19F /* WorkType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1072,7 +1092,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED592D1420849981004C04F4 /* CommonAccessToken.swift in Sources */,
-				ED592D0C208498BB004C04F4 /* GeolocationService.swift in Sources */,
 				ED592D202084A2C4004C04F4 /* LoginViewModelType.swift in Sources */,
 				A31FDF211AE79DCE9C06B784 /* Moya.swift in Sources */,
 				ED0D1EDF205B9FDC00288B22 /* ServerConfigImpTest.swift in Sources */,
@@ -1083,23 +1102,24 @@
 				ED592D102084990E004C04F4 /* UIViewController+Environment.swift in Sources */,
 				ED0D1EE0205B9FDF00288B22 /* ServerConfigImp.swift in Sources */,
 				ED592D082084976F004C04F4 /* AppEnvironment.swift in Sources */,
-				ED592D0B208498BB004C04F4 /* Reachability.swift in Sources */,
 				A31FDE5B034F2BAC4D15BA7A /* CLLocationManager+Rx.swift in Sources */,
 				ED592D0620849769004C04F4 /* AppEnvironmentTests.swift in Sources */,
 				ED592D222084A6A3004C04F4 /* TestScheduler+MarbleTests.swift in Sources */,
 				A31FD001CEEB8E0C96AB3E9C /* CacheType.swift in Sources */,
 				ED592D122084993C004C04F4 /* RouterType.swift in Sources */,
-				ED592D0D208498BB004C04F4 /* ReachabilityService.swift in Sources */,
 				A31FDFA2D74B636EBFE148FD /* OauthAccessToken.swift in Sources */,
 				A31FD5208C087A51C42CF623 /* UserLenes.swift in Sources */,
-				A31FDF98D619DE209D8B5B22 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				ED592D1F2084A2BE004C04F4 /* LoginViewModelTests.swift in Sources */,
 				ED592D112084991D004C04F4 /* RouterDefine.swift in Sources */,
-				A31FDB210C33B5FDD81245E6 /* UIImagePickerController+Rx.swift in Sources */,
-				A31FD04C1780D0C0010524DF /* RxImagePickerDelegateProxy.swift in Sources */,
 				ED592D0E208498FF004C04F4 /* Client.swift in Sources */,
 				ED592D0A208498A9004C04F4 /* UserEvents.swift in Sources */,
 				ED592D232084A71E004C04F4 /* ApplicationViewModelType.swift in Sources */,
+				1A91F6CF5CC7C3F12F5EF793 /* Reachability.swift in Sources */,
+				1A91F451A49513763BACCF88 /* GeolocationService.swift in Sources */,
+				1A91F846EC29BCF47E96CCD4 /* ReachabilityService.swift in Sources */,
+				1A91FA8D90FB0FB02C692560 /* UIImagePickerController+Rx.swift in Sources */,
+				1A91F12E11E2BA4668F697EF /* RxImagePickerDelegateProxy.swift in Sources */,
+				1A91FDE30FD5DDCC53D0FCB9 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
