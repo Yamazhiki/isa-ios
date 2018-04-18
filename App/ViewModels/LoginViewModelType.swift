@@ -28,11 +28,17 @@ internal struct LoginViewModel: LoginViewModelInputs, LoginViewModelOutputs, Log
     private let passwordSubject = PublishSubject<String>()
     private let submitClickSubject = PublishSubject<Void>()
 
+    private let api: Client
+
     var inputs: LoginViewModelInputs {
         return self
     }
     var outputs: LoginViewModelOutputs {
         return self
+    }
+
+    init(_ api: Client) {
+        self.api = api
     }
 
 
@@ -53,7 +59,7 @@ internal struct LoginViewModel: LoginViewModelInputs, LoginViewModelOutputs, Log
         return submitClickSubject.asObservable().withLatestFrom(Observable.combineLatest(usernameSubject.asObservable(), passwordSubject.asObservable()) {
             ($0, $1)
         }).flatMapLatest { params -> Observable<User> in
-            return AppEnvironment.current.api.request(target: .login(params.0, params.1))
+            return api.request(target: .login(params.0, params.1))
         }.map {
             $0.id
         }

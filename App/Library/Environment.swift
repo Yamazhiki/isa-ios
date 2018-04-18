@@ -12,16 +12,13 @@ import Api
 struct Environment {
 
     /// 当前用户
-    let currentUser: User
+    fileprivate let mUser: UserType
 
     /// 数据交互Api管理类
     let api: ApiProvider<Client>
 
     /// 网络反馈
     let reachability: ReachabilityService
-
-    /// 内容缓存
-    let cache: MemoryCache
 
     /*路由管理器*/
     let router: RouterManager<MessageRouter>
@@ -33,48 +30,23 @@ struct Environment {
     let decoder: JSONDecoder
 
     init(
-            user: User = User.template,
+            user: UserType = DefaultUserImp(),
             api: ApiProvider<Client> = ApiProvider.provider,
             reachability: ReachabilityService = try! DefaultReachabilityService(),
-            cache: MemoryCache = MemoryCache(),
             router: RouterManager<MessageRouter> = RouterManager<MessageRouter>(),
             encoder: JSONEncoder = JSONEncoder(),
             decoder: JSONDecoder = JSONDecoder()
     ) {
 
-        self.currentUser = user
+        self.mUser = user
         self.api = api
         self.reachability = reachability
-        self.cache = cache
         self.router = router
         self.encoder = encoder
         self.decoder = decoder
     }
 }
 
-enum EnvironmentType {
-    case simulate
-    case dev
-    case production
-
-    static func from(_ rawValue: Int) -> EnvironmentType {
-        switch rawValue {
-        case 0: return EnvironmentType.simulate
-        case 1: return EnvironmentType.dev
-        default:return EnvironmentType.production
-        }
-    }
-}
-
-extension EnvironmentType {
-    var serverConfig: ServerConfigType {
-        switch self {
-        case .simulate: return ServerConfigImp.simulation
-        case .dev: return ServerConfigImp.dev
-        case .production: return ServerConfigImp.production
-        }
-    }
-}
 
 extension ApiProvider {
     static var provider: ApiProvider {
@@ -82,11 +54,9 @@ extension ApiProvider {
     }
 }
 
-extension EnvironmentType {
-    var stubDelay: Int {
-        switch self {
-        case .simulate: return 200
-        default: return 0
-        }
+extension Environment {
+    var user: User {
+        return mUser as! User
     }
+
 }

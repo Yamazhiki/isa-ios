@@ -69,7 +69,7 @@ enum UILoginReason: UIControllerTaskType {
 
     case live_prepare
     var condition: Bool {
-        return AppEnvironment.current.currentUser.id != 0
+        return AppEnvironment.current.user.id != 0
     }
 
     var controller: UIViewController {

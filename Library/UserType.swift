@@ -4,6 +4,11 @@
 //
 
 import Foundation
+import UIKit
 
-protocol WorkType {
+protocol UserType {
+
+}
+
+struct DefaultUserImp: UserType {
 }
